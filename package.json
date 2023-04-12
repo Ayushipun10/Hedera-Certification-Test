@@ -1,0 +1,32 @@
+{
+  "name": "hedera-certification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "accountCreation": "node accounts/accountCreation.js",
+
+    "consensus": "node consensusService/consensus.js",
+
+    "createFungibleToken": "node tokenService/createFungibleToken.js",
+    "associateAccount": "node tokenService/associateAccount.js",
+    "atomicSwap": "node tokenService/atomicSwap.js",
+    
+    "smartContract": "node smartContractService/smartContract.js",
+
+    "scheduleTransaction": "node scheduleTransaction/scheduleTransaction.js",
+
+    "multiSignature": "node multiSignature/multiSign.js",
+    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.24.0",
+    "dotenv": "^16.0.3",
+    "solc": "^0.8.19",
+    "web3": "^1.9.0"
+  }
+}
